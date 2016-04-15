@@ -1,6 +1,8 @@
 #include <stdio.h>
-#include "TLista.h"
-#include "SparseMatrix.h"
+//#include "TLista.h"
+//#include "SparseMatrix.h"
+#include "Rat.h"
+//#include "TFila.h"
 
 void useList();
 
@@ -8,11 +10,12 @@ void useSparseMatrix();
 
 int main(){
     //useList();
-    useSparseMatrix();
-
+    //useSparseMatrix();
+    TLabirinto ponteiro = (TLabirinto) malloc(10*10*sizeof(int));
+    LimpaLabirinto(ponteiro,10,10);
     return 0;
 }
-
+/*
 void useSparseMatrix() {
     SparseMatrixPointer sparseMatrix = initialize(4, 4);
 
@@ -36,3 +39,4 @@ void useList() {
     TLista_Insere(lista, 5);
     TLista_Imprime(lista);
 }
+*/
